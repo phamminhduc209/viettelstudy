@@ -1,0 +1,166 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*==========*/
+/*  
+  [Let press Ctrl + f and type of paste the key, then press Enter to search the content ] Title
+  Example : You want Import Files => Title is Import Files, or Fonts => Title is Fonts
+
+  
+  
+/*==========*/
+
+/*===== Import Files =====*/
+/* Fonts */
+
+/*  Css */
+@import url(../lib/bootstrap/bootstrap.min.css);
+@import url(../lib/font-awesome/font-awesome.min.css);
+
+/*===== Layout Style =====*/
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  color: #414141;
+  font: 13px Tahoma, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  overflow-x: hidden;
+  word-wrap: break-word
+}
+a {
+  outline: 0;
+  color: #000000;
+  cursor: pointer;
+  text-decoration: none
+}
+a:hover,
+a:focus {
+  color: #999999;
+  text-decoration: none;
+  outline: none;
+  transition: all 0.25s;
+}
+p { margin: 0; }
+select:focus, button:focus, input:focus { outline: none; }
+.btn.focus, .btn:focus, .btn:hover {
+  color: #333;
+  text-decoration: none;
+  outline: none;
+}
+.btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+  outline: none;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea, select, input[type="number"],
+input[type="tel"] {
+  border: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/*ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+ul li,
+ol li {
+  list-style: none;
+}*/
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.wrapper {
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+/*===== Common =====*/
+.block {
+  margin-bottom: 20px;
+  position: relative;
+  display: block;
+}
+.block_breadcrumb .breadcrumb {
+  background: transparent;
+  margin-bottom: 0;
+  padding: 0;
+}
+.block_breadcrumb .breadcrumb li a {
+  color: #999;
+}
+.block_breadcrumb .breadcrumb li.active {
+  color: #414141;
+}
+.block_breadcrumb .breadcrumb>li+li:before {
+  padding: 0 5px;
+  color: #465363;
+  content: "/\00a0";
+}
+
+/*===== Product Detail=====*/
+
+
+/*===== Header =====*/
+
+
+/* Menu Top */
+.box-menu {
+  background: #14928E;
+}
+.navbar-custom {
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+  min-height: 38px;
+}
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-nav li {
+  list-style-type: none;
+}
+.menu .navbar-nav>li>a {
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 0 15px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.menu .navbar-nav>li.menu-icon>a {
+  min-width: 40px;
+  height: 40px;
+  padding: 0;
+  text-indent: -8000px;
+  background: url(../images/menu_home.png) no-repeat center 8px;
+}
+.menu .navbar-nav>li.menu-icon>a:hover {
+  background: url(../images/menu_home-hover.png) no-repeat center -27px;
+}
