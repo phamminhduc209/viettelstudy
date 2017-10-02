@@ -34,7 +34,7 @@
 						<div class="block-logo col-sm-3">
 							<a href="#" title=""><img src="images/logo_gd.png" alt=""></a>
 						</div><!-- /block-log -->
-						<div class="block-search col-sm-7">
+						<div class="block-search col-sm-6">
 							<form name="frm_search" action="" class="frm-search">
 								<div class="control clearfix">
 									<button type="submit">
@@ -44,12 +44,25 @@
 								</div>
 							</form>
 						</div><!-- /block-search -->
-						<div class="block-user col-sm-2">
-							<ul>
-								<li><a href="#" title="Đăng Nhập">Đăng Nhập</a></li>
-								<li><span>|</span></li>
-								<li><a href="#" title="Đăng Kí">Đăng Kí</a></li>
-							</ul>
+						<div class="block-user col-sm-3" data-toggle="popover" id="signIn">
+							<span class="ava-img">
+								<img alt="" src="images/user.svg">
+							</span>
+							<div class="ava-info">
+								<p><strong>Đăng nhập, đăng ký</strong></p>
+								<p class="small">Tài khoản</p>
+							</div>
+							<div class="popover fade bottom in" style="display: block;">
+							    <div class="arrow"></div>
+							    <div class="popover-content">
+							        <div class="popover-signin">
+							        	<a class="btn btn-block btn-white" href="#" onclick="show_modal('login');">Đăng nhập</a>
+							        	<a class="btn btn-block btn-white" href="#" onclick="show_modal('register');">Đăng ký tài khoản mới</a>
+							        	<a class="btn btn-block login-button-fb btn-social" href="/users/auth/facebook">Đăng nhập với Facebook</a>
+							        	<a class="btn btn-block login-button-google btn-social" href="/users/auth/google_oauth2">Đăng nhập với Google+</a>
+							       	</div>
+							    </div>
+							</div>
 						</div><!-- /block-user -->
 					</div>
 				</div>
@@ -613,6 +626,12 @@
 	<script src="lib/carousel/owl.carousel.min.js"></script>
 	<!-- Js Common -->
 	<script src="js/common.js"></script>
+
+	<script>
+	$(document).ready(function(){
+	    $('[data-toggle="popover"]').popover(); 
+	});
+	</script>
 
 </body>
 </html>
