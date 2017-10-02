@@ -44,7 +44,7 @@
 								</div>
 							</form>
 						</div><!-- /block-search -->
-						<div class="block-user col-sm-3" data-toggle="popover" id="signIn">
+						<div class="block-user col-sm-3">
 							<span class="ava-img">
 								<img alt="" src="images/user.svg">
 							</span>
@@ -52,14 +52,14 @@
 								<p><strong>Đăng nhập, đăng ký</strong></p>
 								<p class="small">Tài khoản</p>
 							</div>
-							<div class="popover fade bottom in" style="display: block;">
+							<div class="popover fade bottom in">
 							    <div class="arrow"></div>
 							    <div class="popover-content">
 							        <div class="popover-signin">
-							        	<a class="btn btn-block btn-white" href="#" onclick="show_modal('login');">Đăng nhập</a>
-							        	<a class="btn btn-block btn-white" href="#" onclick="show_modal('register');">Đăng ký tài khoản mới</a>
-							        	<a class="btn btn-block login-button-fb btn-social" href="/users/auth/facebook">Đăng nhập với Facebook</a>
-							        	<a class="btn btn-block login-button-google btn-social" href="/users/auth/google_oauth2">Đăng nhập với Google+</a>
+							        	<a class="btn btn-block btn-white" href="javascript(0);" data-toggle="modal" data-target="#login-modal">Đăng nhập</a>
+							        	<a class="btn btn-block btn-white" href="javascript(0);" data-toggle="modal" data-target="#register-modal">Đăng ký tài khoản mới</a>
+							        	<a class="btn btn-block login-button-fb btn-social" href="#">Đăng nhập với Facebook</a>
+							        	<a class="btn btn-block login-button-google btn-social" href="#">Đăng nhập với Google+</a>
 							       	</div>
 							    </div>
 							</div>
@@ -173,11 +173,30 @@
 							</div>
 						</div><!-- /home-news-left -->
 						<div class="home-news-right">
-							<div class="home-news-left">
-								<div class="item">
-									
-								</div>
-							</div>
+							<div class="item">
+								<a class="right-item-lnk-img" href="#" title="">
+		                            <img src="images/news-home/thumb00_094011153057836_150x84.jpg" alt="5 điều chúng ta cứ mãi phàn nàn ở tuổi 20, trưởng thành rồi mới biết đó là những thứ siêu tuyệt vời" title="5 điều chúng ta cứ mãi phàn nàn ở tuổi 20, trưởng thành rồi mới biết đó là những thứ siêu tuyệt vời">
+		                        </a>
+		                        <h3 class="right-item-title">
+		                            <a class="item-title-lnk" href="#" title="5 điều chúng ta cứ mãi phàn nàn ở tuổi 20, trưởng thành rồi mới biết đó là những thứ siêu tuyệt vời">5 điều chúng ta cứ mãi phàn nàn ở tuổi 20, trưởng thành rồi mới biết đó là những thứ siêu tuyệt vời</a>
+		                        </h3>
+							</div><!-- /item -->
+							<div class="item">
+								<a class="right-item-lnk-img" href="#" title="">
+		                            <img src="images/news-home/thumb00_081742774453351_150x84.jpg" alt="Hà Nội công bố chỉ tiêu tuyển sinh vào lớp 10" title="Hà Nội công bố chỉ tiêu tuyển sinh vào lớp 10">
+		                        </a>
+		                        <h3 class="right-item-title">
+		                            <a class="item-title-lnk" href="#" title="Hà Nội công bố chỉ tiêu tuyển sinh vào lớp 10">Hà Nội công bố chỉ tiêu tuyển sinh vào lớp 10</a>
+		                        </h3>
+							</div><!-- /item -->
+							<div class="item">
+								<a class="right-item-lnk-img" href="#" title="">
+		                            <img src="images/news-home/thumb00_061148401903008_150x84.jpg" alt="Nếu gặp 6 khó khăn này, bạn là một người đặc biệt thông minh" title="Nếu gặp 6 khó khăn này, bạn là một người đặc biệt thông minh">
+		                        </a>
+		                        <h3 class="right-item-title">
+		                            <a class="item-title-lnk" href="#" title="Nếu gặp 6 khó khăn này, bạn là một người đặc biệt thông minh">Nếu gặp 6 khó khăn này, bạn là một người đặc biệt thông minh</a>
+		                        </h3>
+							</div><!-- /item -->
 						</div><!-- /home-news-right -->
 					</div><!-- /block-quotations -->
 				</div><!-- /block-quotations -->
@@ -616,6 +635,122 @@
 			</div> -->
 		</footer>
 
+		<div class="modal fade" id="login-modal" tabindex="-1" role="dialog">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+						<h3 class="modal-title">Đăng nhập</h3>
+					</div>
+					<div class="modal-body">
+					    <form action="/users/sign_in" method="post">
+					        <p class="sub-title">Đăng nhập bằng email</p>
+					        <div class="form-control-wrapper">
+					            <input class="form-control" id="email" name="user[email]" placeholder="Email" required="true" type="email" value="">
+					        </div>
+					        <div class="form-control-wrapper">
+					            <input class="form-control" id="password" name="user[password]" placeholder="Mật khẩu" required="true" type="password">
+					        </div>
+					        <div class="form-control-wrapper">
+					            <input class="btn btn-login-submit" type="submit" value="Đăng nhập">
+					        </div>
+					    </form>
+					    <p class="forgot-password-link">
+					        <a class="btn-link" data-dismiss="modal" data-target="#fogot-password-dialog" data-toggle="modal" href="#" id="forgot-password-button">Quên mật khẩu đăng nhập?</a>
+					    </p>
+					</div>
+					<div class="modal-footer">
+					    <div class="forgot-password-link clearfix">
+					        <a class="btn btn-link show-social-link" href="#" data-toggle="collapse" data-target=".social-area">
+					        Đăng nhập với tài khoản mạng xã hội
+					        <span>
+					        <i class="fa fa-angle-down"></i>
+					        </span>
+					        </a>
+					        <div class="form-control-wrapper social-area collapse">
+					            <div class="row">
+					                <div class="col-md-6">
+					                    <a class="btn-facebook" href="/users/auth/facebook">
+					                    <i class="left fa fa-facebook"></i>
+					                    <span class="left">Facebook</span>
+					                    </a>
+					                </div>
+					                <div class="col-md-6">
+					                    <a class="btn-google" href="/users/auth/google_oauth2">
+					                    <i class="left fa fa-google-plus"></i>
+					                    <span class="left">Google+</span>
+					                    </a>
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+					    <p class="bottom-text">
+					        Chưa có tài khoản?
+					        <a class="btn-link" data-dismiss="modal" data-target="#register-modal" data-toggle="modal" href="#">Đăng ký</a>
+					    </p>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+		<div class="modal fade in" id="register-modal">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header">
+		                <button aria-hidden="true" class="close" data-dismiss="modal" type="button">×</button>
+		                <h3 class="modal-title">Đăng ký</h3>
+		            </div>
+		            <div class="modal-body">
+		                <form action="/users" method="post">
+		                    <p class="sub-title">Đăng ký bằng email</p>
+		                    <div class="form-control-wrapper">
+		                        <input class="form-control" id="name" name="user[name]" placeholder="Họ và tên" required="true" type="text" value="">
+		                    </div>
+		                    <div class="form-control-wrapper">
+		                        <input class="form-control" id="email" name="user[email]" placeholder="Email" required="true" type="email" value="">
+		                    </div>
+		                    <div class="form-control-wrapper">
+		                        <input class="form-control" id="password" name="user[password]" placeholder="Mật khẩu" required="true" type="password">
+		                    </div>
+		                    <div class="form-control-wrapper">
+		                        <input class="btn btn-login-submit" type="submit" value="Đăng ký">
+		                    </div>
+		                </form>
+		            </div>
+		            <div class="modal-footer">
+		                <div class="forgot-password-link clearfix">
+					        <a class="btn btn-link show-social-link" href="#" data-toggle="collapse" data-target=".social-area">
+					        Đăng nhập với tài khoản mạng xã hội
+					        <span>
+					        <i class="fa fa-angle-down"></i>
+					        </span>
+					        </a>
+					        <div class="form-control-wrapper social-area collapse">
+					            <div class="row">
+					                <div class="col-md-6">
+					                    <a class="btn-facebook" href="/users/auth/facebook">
+					                    <i class="left fa fa-facebook"></i>
+					                    <span class="left">Facebook</span>
+					                    </a>
+					                </div>
+					                <div class="col-md-6">
+					                    <a class="btn-google" href="/users/auth/google_oauth2">
+					                    <i class="left fa fa-google-plus"></i>
+					                    <span class="left">Google+</span>
+					                    </a>
+					                </div>
+					            </div>
+					        </div>
+					    </div>
+		                <p class="bottom-text">
+		                    Đã có tài khoản?
+		                    <a class="btn-link" data-dismiss="modal" data-target="#login-modal" data-toggle="modal" href="#">Đăng nhập</a>
+		                </p>
+		            </div>
+		        </div>
+		    </div>
+		</div><!-- /.modal -->
+
 	</div>
 	
 	<!-- ===== JS ===== -->
@@ -629,7 +764,13 @@
 
 	<script>
 	$(document).ready(function(){
-	    $('[data-toggle="popover"]').popover(); 
+	    $('.block-user').popover({
+	    	placement: top,
+			html : true,
+			content: function() {
+				return $('.popover').html();
+			} 
+	  });  
 	});
 	</script>
 
