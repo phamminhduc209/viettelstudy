@@ -293,6 +293,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block-user {
+  position: relative;
+}
+.block-content {
   margin-top: 3px;
   display: inline-flex;
   vertical-align: top;
@@ -331,6 +334,24 @@ h1, h2, h3, h4, h5, h6 {
   height: 4px;
   top: 8px;
   right: 0;
+}
+.block-user .popover {
+  left: 0 !important;
+  border: 1px solid #d8d8d8 !important;
+}
+.block-user .popover>.arrow {
+  left: 50%;
+  margin-left: -11px;
+  border-top-width: 0;
+  border-bottom-color: #999999;
+  top: -11px !important;
+}
+.block-user .popover>.arrow:after {
+  content: " ";
+  top: 1px;
+  margin-left: -10px;
+  border-top-width: 0;
+  border-bottom-color: #fff;
 }
 
 /* Menu Top */
