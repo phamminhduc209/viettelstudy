@@ -207,7 +207,6 @@ h1, h2, h3, h4, h5, h6 {
 .block-pagination .pagination {
   margin: 5px 0;
   text-align: center;
-  display: block;
 }
 .block-pagination .pagination>.active>a, .block-pagination .pagination>.active>a:focus, .block-pagination .pagination>.active>a:hover, .block-pagination .pagination>.active>span, .block-pagination .pagination>.active>span:focus, .block-pagination .pagination>.active>span:hover {
   color: #fff;
@@ -216,6 +215,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block-pagination .pagination>li>a, .block-pagination .pagination>li>span {
   color: #51A0FB;
+}
+.block-pagination .pagination>li>a:focus, .block-pagination .pagination>li>a:hover, .block-pagination .pagination>li>span:focus, .block-pagination .pagination>li>span:hover {
+  z-index: 2;
+  color: #ffffff;
+  background-color: #4267b2;
+  border-color: #4267b2;
 }
 
 .box-table {
@@ -295,7 +300,7 @@ h1, h2, h3, h4, h5, h6 {
 .block-user {
   position: relative;
 }
-.block-content {
+.block-user .block-content {
   margin-top: 3px;
   display: inline-flex;
   vertical-align: top;
@@ -1245,12 +1250,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block-list-course .item .title {
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 14px;
   color: #565656;
   line-height: 24px;
   font-weight: bold;
   display: block;
+  max-height: 45px;
+  height: 45px;
+  overflow: hidden;
 }
 .block-list-course .item:hover .title {
   color: #00918D;
@@ -1261,7 +1269,9 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 20px;
   color: #888;
   display: block;
-  margin: 10px 0;
+  margin-bottom: 10px;
+  height: 60px;
+  overflow: hidden;
 }
 .block-list-course .item .statistics {
   margin-left: -10px;
