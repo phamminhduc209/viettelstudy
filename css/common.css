@@ -138,7 +138,7 @@ a.under:hover {
 #header-top a.header-logo {
     float: left;
     width: 255px;
-    background: url(../images/logo_gd.png) no-repeat left top;
+    background: url(../images/logo_gd.jpg) no-repeat left top;
     height: 95px;
     margin-left: 10px;
     display: inline;
@@ -293,7 +293,7 @@ a.under:hover {
     padding-bottom: 15px;
 }
 #footer-bottom a.logo-gd-footer {
-    background: url(../images/logo_gd_footer.png) no-repeat left top;
+    background: url(../images/logo_gd_footer.jpg) no-repeat left top;
     width: 177px;
     height: 60px;
     float: left;
