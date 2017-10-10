@@ -1984,3 +1984,90 @@ h1, h2, h3, h4, h5, h6 {
   padding: 5px 0;
   font-family: Arial;
 }
+
+.block-lesson-left,
+.block-lesson-right {
+  border: 1px solid #E2E2E2;
+  padding: 10px;
+}
+.block-lesson-left .block-title {
+  color: #00918D;
+  font-size: 15px;
+}
+.block-lesson-left .box-item {
+  margin-top: 10px;
+}
+.block-lesson-left .box-item .box-item-title {
+  color: #474747;
+  font-size: 14px;
+}
+.block-lesson-left .box-item .box-item-list {
+  margin-top: 10px;
+}
+.block-lesson-left .box-item .box-item-list li {
+  margin-bottom: 10px;
+  padding-left: 15px;
+}
+.block-lesson-left .box-item .box-item-list li:last-child {
+  margin-bottom: 0;
+}
+.block-lesson-left .box-item .box-item-list li.skill-playing a {
+  color: #00918d;
+  font-weight: bold;
+}
+.block-lesson-left .box-item .box-item-list li:hover a {
+  color: #00918d;
+}
+
+.block-lesson-right .block-lesson-player {
+  max-height: : 365px;
+  height: 365px;
+}
+
+.nav-tabs>li {
+  width: 50%;
+  text-align: center;
+}
+.nav-tabs>li>a {
+  margin-right: 0;
+  border: 1px solid #ddd;
+  border-radius: 0;
+  font-size: 15px;
+  color: #707070;
+  font-weight: bold;
+}
+.nav-tabs>li:last-child>a {
+  border-left: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border-bottom-color: #ddd;
+  color: #00918D;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+.nav-tabs>li>a:hover {
+  border-color: #ddd;
+}
+.block-lesson-ct .tab-content {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+
+.group-btn .btn.btn-lesson {
+  background: #51A0FB;
+  background: -webkit-linear-gradient(top, #9dcbff 0%,#51A0FB 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dcbff', endColorstr='#51A0FB',GradientType=0 );
+  background: -moz-linear-gradient(center top , #9dcbff 4pt, #51A0FB 100%) repeat scroll 0 0 #51A0FB !important;
+  border-radius: 7px 7px 7px 7px;
+  padding: 10px 0px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  width: 145px;
+  float: left;
+  text-align: center;
+  margin-right: 0;
+}
