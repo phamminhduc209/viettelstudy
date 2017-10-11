@@ -1675,10 +1675,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block-teachers .item .image {
   overflow: hidden;
+  height: 120px;
 }
 .block-teachers .item .image img {
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .block-teachers .item .name-teacher {
   overflow: hidden;
@@ -1714,7 +1715,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block-members .item .image {
   padding: 5px;
+  height: 127px;
   overflow: hidden;
+}
+.block-members .item .image img {
+  width: 100%;
+  height: auto;
 }
 .block-members .item .description {
   border-top: 1px solid #DCDCDC;
