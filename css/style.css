@@ -873,10 +873,8 @@ h1, h2, h3, h4, h5, h6 {
 
 /*===== Footer =====*/
 #footer .block-info-ft {
-  padding: 15px 0;
-  background-image: url(../images/CAA-Niagara_Book-Outlet-Banner_0.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  margin-top: 15px;
+  padding-bottom: 15px;
 }
 #footer .block-info-ft .container {
   border-bottom: 1px solid #51A0FB;
@@ -897,16 +895,21 @@ h1, h2, h3, h4, h5, h6 {
 .block-social ul li {
   list-style-type: none;
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
   text-align: center;
   background: #51A0FB;
   border-radius: 50%;
+  transition: all 0.3s;
+}
+.block-social ul li:hover {
+  opacity: 0.8;
+  transition: all 0.3s;
 }
 .block-social ul li a {
   color: #fff;
-  line-height: 30px;
-  font-size: 15px;
+  line-height: 35px;
+  font-size: 17px;
 }
 .block-social ul li.facebook {
   background: #305E94;
@@ -919,6 +922,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 .block-social ul li.google {
   background: #317498;
+}
+.block-social ul li.zalo {
+  background: #51a0fb;
+}
+.block-social ul li.zalo img {
+  display: inline-block;
+  width: 30px;
+  vertical-align: middle;
+  border-radius: 50px;
 }
 
 
